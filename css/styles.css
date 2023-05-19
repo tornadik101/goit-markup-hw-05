@@ -749,9 +749,9 @@ img {
   border-radius: 4px;
 }
 
-.backdrop.is-hidden .modal {
+/* .backdrop.is-hidden .modal {
   transform: translate(-100%, -100%) scale(0.5);
-}
+} */
 
 .modal-close-btn {
   display: flex;
@@ -772,13 +772,14 @@ img {
 .cross-icon {
   position: absolute;
   transform: translate(-50%, -50%);
-  fill: currentColor;
+  /* fill: currentColor; */
   top: 50%;
   left: 50%;
+  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  color: #ffffff;
+  fill: #ffffff;
   background-color: #404bbf;
 }
