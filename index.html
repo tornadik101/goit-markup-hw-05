@@ -28,10 +28,12 @@
           >
           <ul class="menu list">
             <li class="link list header-li">
-              <a class="color-link link" href="./index.html">Studio</a>
+              <a class="color-link current link" href="./index.html">Studio</a>
             </li>
             <li class="link list header-li">
-              <a class="color-link link" href="./portfolio.html">Portfolio</a>
+              <a class="color-link link-portf link" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="link list header-li">
               <a class="color-link link" href="">Contacts</a>
@@ -66,7 +68,9 @@
         <div class="container">
           <div class="container baner-text-wraper">
             <h1 class="baner-text">Effective Solutions for Your Business</h1>
-            <button class="main-btn" type="button">Order Service</button>
+            <button class="main-btn" type="button" data-open-modal>
+              Order Service
+            </button>
           </div>
         </div>
       </section>
@@ -442,5 +446,21 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
+
+    <div class="backdrop" data-backdrop>
+      <div class="modal">
+        <p></p>
+
+        <button type="button" data-close-modal class="modal-close-btn">
+          <svg class="cross-icon" width="8" height="8">
+            <use href="./images/icons.svg#cross-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
